@@ -1202,3 +1202,12 @@ body {
         max-width: 330px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: calc(100% - 36px) !important;
+        max-width: 520px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
