@@ -33,3 +33,17 @@
         letter-spacing: 1.5px;
     }
 }
+
+
+.eyebrow {
+    font-size: 32px !important;
+    font-weight: 900 !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 25px !important;
+}
+
+@media (max-width: 650px) {
+    .eyebrow {
+        font-size: 27px !important;
+    }
+}
