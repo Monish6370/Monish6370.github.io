@@ -38,6 +38,8 @@
 .eyebrow {
     font-size: 32px !important;
     font-weight: 900 !important;
+
+    
     letter-spacing: 3px !important;
     margin-bottom: 25px !important;
 }
@@ -46,4 +48,9 @@
     .eyebrow {
         font-size: 27px !important;
     }
+}
+.hero-copy .eyebrow {
+    font-size: 36px !important;
+    font-weight: 900 !important;
+    letter-spacing: 2px !important;
 }
