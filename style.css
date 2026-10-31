@@ -18,3 +18,18 @@
         font-size: 32px !important;
     }
 }
+
+
+.hero-copy .eyebrow {
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px;
+}
+
+/* Mobile size */
+@media (max-width: 650px) {
+    .hero-copy .eyebrow {
+        font-size: 25px !important;
+        letter-spacing: 1.5px;
+    }
+}
