@@ -1211,3 +1211,25 @@ body {
         margin-right: auto !important;
     }
 }
+
+/* Fix horizontal scrolling on mobile */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img, video, canvas {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: calc(100% - 36px) !important;
+        max-width: 520px !important;
+    }
+}
