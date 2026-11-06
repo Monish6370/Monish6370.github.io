@@ -1,9 +1,4 @@
 
-/* ==========================================
-   MOHD MONISH - PREMIUM PORTFOLIO
-   Dark Glassmorphism Design
-========================================== */
-
 :root {
   --bg: #050b18;
   --surface: rgba(17, 36, 65, 0.65);
@@ -782,12 +777,9 @@ img {
   margin-bottom: 15px;
 }
 
-/* ==========================================
-   CRYPTOX - PREMIUM TRADING DASHBOARD
-========================================== */
 
 .project-art.cryptox-art {
-  min-height: 360px !important;
+  min-height: 265px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
