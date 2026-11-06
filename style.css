@@ -1,7 +1,11 @@
 
+/* ==========================================
+   MOHD MONISH - PREMIUM PORTFOLIO
+   Dark Glassmorphism Design
+========================================== */
+
 :root {
   --bg: #050b18;
-  --bg-light: #0b1830;
   --surface: rgba(17, 36, 65, 0.65);
   --surface-hover: rgba(24, 49, 83, 0.85);
   --border: rgba(145, 188, 255, 0.18);
@@ -198,8 +202,6 @@ img {
   z-index: 2;
 }
 
-/* NAME: BIGGER */
-
 .hero-kicker {
   margin-bottom: 12px;
   color: #f4f8ff;
@@ -209,8 +211,6 @@ img {
   line-height: 1;
   letter-spacing: -4px;
 }
-
-/* JOB TITLE: SMALLER THAN NAME */
 
 .hero h1 {
   max-width: 700px;
@@ -567,7 +567,7 @@ img {
   font-size: 11px;
 }
 
-/* PROJECTS */
+/* PROJECTS GRID */
 
 .projects-grid {
   display: grid;
@@ -577,6 +577,7 @@ img {
 
 .project-card {
   overflow: hidden;
+  min-width: 0;
   border: 1px solid var(--border);
   border-radius: 24px;
   background: rgba(12, 27, 49, 0.75);
@@ -594,6 +595,8 @@ img {
   min-height: 265px;
   overflow: hidden;
 }
+
+/* ATTENDANCE PROJECT */
 
 .attendance-art {
   display: grid;
@@ -680,6 +683,8 @@ img {
   background: linear-gradient(to top, #2875ce, #a3d6ff);
 }
 
+/* WATCH PROJECT */
+
 .watch-art {
   display: flex;
   align-items: center;
@@ -742,6 +747,8 @@ img {
   font-size: 17px;
 }
 
+/* PROJECT CONTENT */
+
 .project-content {
   padding: 25px;
 }
@@ -775,10 +782,301 @@ img {
   margin-bottom: 15px;
 }
 
-.project-footnote {
-  margin-top: 20px;
-  color: #7f94b0;
+/* ==========================================
+   CRYPTOX - PREMIUM TRADING DASHBOARD
+========================================== */
+
+.project-art.cryptox-art {
+  min-height: 360px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 22px !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 75% 15%, rgba(103, 91, 255, .23), transparent 42%),
+    radial-gradient(circle at 15% 90%, rgba(42, 140, 255, .18), transparent 45%),
+    #081326 !important;
+}
+
+/* Dashboard */
+
+.crypto-dashboard {
+  width: 100%;
+  max-width: 650px;
+  min-height: 310px;
+  display: grid;
+  grid-template-columns: 115px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(148, 174, 255, .22);
+  border-radius: 15px;
+  background: #0b1428;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+  transform: perspective(1000px) rotateY(-3deg);
+  font-family: var(--body);
+}
+
+.crypto-dashboard * {
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+
+.crypto-sidebar {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 9px;
+  padding: 15px 9px;
+  border-right: 1px solid rgba(255,255,255,.08);
+  background: #0e1a32;
+}
+
+.crypto-brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  color: white;
   font-size: 11px;
+  font-weight: 700;
+}
+
+.crypto-brand span {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 7px;
+  color: white;
+  background: linear-gradient(135deg,#6d8cff,#a05bfa);
+}
+
+.crypto-nav {
+  padding: 8px 6px;
+  border-radius: 6px;
+  color: #899bb9;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.crypto-nav.active {
+  color: white;
+  background: rgba(103, 133, 255, .18);
+}
+
+.crypto-sidebar-bottom {
+  margin-top: auto;
+  color: #8da4c6;
+  font-size: 7px;
+}
+
+.online-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: #40dba0;
+}
+
+/* Main content */
+
+.crypto-main {
+  min-width: 0;
+  padding: 16px;
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.crypto-header small,
+.crypto-overview small {
+  color: #8498b8;
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+.crypto-header h3 {
+  margin: 2px 0 0;
+  color: #f5f7ff;
+  font-size: 16px;
+}
+
+.crypto-avatar {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(135deg,#687eff,#9c64e9);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Portfolio cards */
+
+.crypto-overview {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 11px;
+}
+
+.crypto-balance-card,
+.crypto-mini-card {
+  min-width: 0;
+  padding: 11px 9px;
+  border: 1px solid rgba(141, 166, 255, .15);
+  border-radius: 9px;
+  background: linear-gradient(
+    135deg,
+    rgba(46, 71, 128, .3),
+    rgba(24, 37, 68, .55)
+  );
+}
+
+.crypto-balance-card h2 {
+  margin: 6px 0;
+  color: white;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.crypto-balance-card > span {
+  color: #55dba7;
+  font-size: 8px;
+}
+
+.crypto-mini-card strong {
+  display: block;
+  margin: 7px 0 2px;
+  color: #edf3ff;
+  font-size: 17px;
+}
+
+.crypto-mini-card > span {
+  color: #8ea3c4;
+  font-size: 7px;
+}
+
+/* Analytics */
+
+.crypto-content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.crypto-chart-card,
+.crypto-activity {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid rgba(141, 166, 255, .13);
+  border-radius: 9px;
+  background: rgba(22, 36, 66, .55);
+}
+
+.crypto-card-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  color: #e7efff;
+  font-size: 9px;
+}
+
+.crypto-card-heading small {
+  color: #879bbd;
+  font-size: 6px;
+}
+
+.crypto-chart-value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: #9db1d1;
+  font-size: 8px;
+}
+
+.crypto-chart-value span {
+  color: #4cdda3;
+}
+
+.crypto-chart {
+  height: 67px;
+  margin-top: 5px;
+}
+
+.crypto-chart svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Recent activity */
+
+.crypto-activity > strong,
+.crypto-market > strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #e7efff;
+  font-size: 9px;
+}
+
+.crypto-activity > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
+  color: #a6b7d1;
+  font-size: 7px;
+}
+
+.crypto-activity b {
+  margin-left: auto;
+  color: #4cdda3;
+  font-size: 6px;
+}
+
+.activity-icon {
+  color: #53dba4;
+}
+
+.activity-icon.purple {
+  color: #a58aff;
+}
+
+/* Market table */
+
+.crypto-market {
+  padding: 11px;
+  border: 1px solid rgba(141, 166, 255, .13);
+  border-radius: 9px;
+  background: rgba(22, 36, 66, .55);
+}
+
+.market-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr .7fr;
+  gap: 5px;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255,255,255,.06);
+  color: #a9bad4;
+  font-size: 7px;
+}
+
+.market-up {
+  color: #4cdda3;
+  text-align: right;
 }
 
 /* CERTIFICATIONS AND ACHIEVEMENTS */
@@ -923,7 +1221,7 @@ img {
   color: var(--blue-light);
 }
 
-/* SCROLL ANIMATION */
+/* SCROLL REVEAL */
 
 .reveal {
   opacity: 0;
@@ -986,7 +1284,6 @@ img {
 /* MOBILE */
 
 @media (max-width: 680px) {
-
   .container {
     width: min(100% - 34px, 540px);
   }
@@ -1042,16 +1339,12 @@ img {
     padding-bottom: 65px;
   }
 
-  /* NAME */
-
   .hero-kicker {
     margin-bottom: 10px;
     font-size: clamp(43px, 10.5vw, 60px);
     letter-spacing: -3px;
     line-height: 1;
   }
-
-  /* SOFTWARE ENGINEER */
 
   .hero h1 {
     max-width: 540px;
@@ -1182,12 +1475,52 @@ img {
     width: 100%;
     justify-content: center;
   }
+
+  /* CryptoX mobile dashboard */
+
+  .project-art.cryptox-art {
+    min-height: 310px !important;
+    padding: 12px !important;
+  }
+
+  .crypto-dashboard {
+    grid-template-columns: 82px minmax(0, 1fr);
+    min-height: 280px;
+    transform: none;
+  }
+
+  .crypto-main {
+    padding: 10px;
+  }
+
+  .crypto-sidebar {
+    padding: 12px 6px;
+  }
+
+  .crypto-overview {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .crypto-mini-card:last-child {
+    display: none;
+  }
+
+  .crypto-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crypto-activity {
+    display: none;
+  }
+
+  .crypto-balance-card h2 {
+    font-size: 14px;
+  }
 }
 
 /* SMALL PHONES */
 
 @media (max-width: 380px) {
-
   .hero-kicker {
     font-size: 42px;
     letter-spacing: -2px;
@@ -1222,6 +1555,26 @@ img {
   .orbit-b {
     height: 330px;
   }
+
+  .crypto-dashboard {
+    grid-template-columns: 65px minmax(0, 1fr);
+  }
+
+  .crypto-brand {
+    font-size: 9px;
+  }
+
+  .crypto-nav {
+    font-size: 7px;
+  }
+
+  .crypto-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .crypto-mini-card {
+    display: none;
+  }
 }
 
 /* ACCESSIBILITY */
@@ -1233,292 +1586,5 @@ img {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
-  }
-}
-
-
-/* =====================================
-   CRYPTOX PROJECT CARD
-===================================== */
-
-.cryptox-art {
-  display: grid;
-  place-items: center;
-  min-height: 265px;
-  padding: 25px;
-  overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at 50% 45%,
-      rgba(91, 104, 230, 0.32),
-      transparent 60%
-    ),
-    linear-gradient(145deg, #101b3b, #071426);
-}
-
-/* Dashboard preview */
-
-.crypto-window {
-  width: 100%;
-  max-width: 390px;
-  padding: 17px;
-
-  border: 1px solid rgba(151, 175, 255, 0.3);
-  border-radius: 16px;
-
-  background: rgba(8, 17, 38, 0.92);
-
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
-
-  transform: rotate(-2deg);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .crypto-window {
-  transform: rotate(0deg) scale(1.02);
-}
-
-/* Dashboard topbar */
-
-.crypto-topbar {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-
-  padding-bottom: 15px;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.crypto-logo {
-  display: grid;
-  width: 30px;
-  height: 30px;
-  place-items: center;
-
-  border-radius: 9px;
-
-  color: white;
-  background: linear-gradient(135deg, #6c8dff, #8d56ed);
-
-  font-family: var(--heading);
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.crypto-topbar strong {
-  color: white;
-  font-size: 13px;
-}
-
-.crypto-status {
-  margin-left: auto;
-  color: #91b8ff;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* Balance section */
-
-.crypto-balance {
-  padding: 20px 0;
-}
-
-.crypto-balance small {
-  color: #8fa4c8;
-  font-size: 8px;
-  letter-spacing: 1px;
-}
-
-.crypto-balance h3 {
-  margin-top: 5px;
-  color: white;
-  font-family: var(--heading);
-  font-size: 17px;
-}
-
-.crypto-amount {
-  margin-top: 8px;
-  color: #c5dcff;
-  font-family: var(--heading);
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.crypto-positive {
-  color: #8fc7ff;
-  font-size: 9px;
-}
-
-/* Dashboard statistics */
-
-.crypto-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.crypto-stats div {
-  padding: 12px 8px;
-
-  border: 1px solid rgba(151, 175, 255, 0.14);
-  border-radius: 9px;
-
-  background: rgba(75, 108, 178, 0.1);
-}
-
-.crypto-stats span {
-  color: #8fa4c8;
-  font-size: 8px;
-  letter-spacing: 1px;
-}
-
-.crypto-stats strong {
-  display: block;
-  margin-top: 6px;
-
-  color: #c5dcff;
-  font-size: 17px;
-}
-
-/* Mobile adjustment */
-
-@media (max-width: 680px) {
-  .cryptox-art {
-    min-height: 230px;
-    padding: 18px;
-  }
-
-  .crypto-window {
-    max-width: 340px;
-    padding: 13px;
-  }
-
-  .crypto-amount {
-    font-size: 22px;
-  }
-}
-
-
-/* CRYPTOX PREVIEW - FIXED */
-
-.project-art.cryptox-art {
-  min-height: 265px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 25px !important;
-  overflow: hidden !important;
-  background:
-    radial-gradient(circle at center, rgba(91, 104, 230, .35), transparent 65%),
-    linear-gradient(145deg, #101b3b, #071426) !important;
-}
-
-.project-art.cryptox-art .crypto-window {
-  display: block !important;
-  width: 100% !important;
-  max-width: 390px !important;
-  padding: 18px !important;
-  border: 1px solid rgba(151, 175, 255, .3) !important;
-  border-radius: 16px !important;
-  background: rgba(8, 17, 38, .96) !important;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, .4) !important;
-  transform: rotate(-2deg);
-}
-
-.crypto-topbar {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  padding-bottom: 14px !important;
-  border-bottom: 1px solid rgba(255,255,255,.1) !important;
-}
-
-.crypto-logo {
-  display: grid !important;
-  width: 30px !important;
-  height: 30px !important;
-  flex-shrink: 0;
-  place-items: center !important;
-  border-radius: 9px !important;
-  color: white !important;
-  background: linear-gradient(135deg,#6c8dff,#8d56ed) !important;
-  font-weight: 700 !important;
-}
-
-.crypto-topbar strong {
-  color: white !important;
-  font-size: 14px !important;
-}
-
-.crypto-status {
-  margin-left: auto !important;
-  color: #91b8ff !important;
-  font-size: 8px !important;
-  letter-spacing: 1px !important;
-}
-
-.crypto-balance {
-  padding: 20px 0 !important;
-}
-
-.crypto-balance small {
-  color: #8fa4c8 !important;
-  font-size: 9px !important;
-}
-
-.crypto-balance h3 {
-  margin: 5px 0 !important;
-  color: white !important;
-  font-size: 18px !important;
-}
-
-.crypto-amount {
-  margin: 8px 0 !important;
-  color: #c5dcff !important;
-  font-size: 26px !important;
-  font-weight: 700 !important;
-}
-
-.crypto-positive {
-  color: #8fc7ff !important;
-  font-size: 10px !important;
-}
-
-.crypto-stats {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 9px !important;
-}
-
-.crypto-stats div {
-  padding: 12px 9px !important;
-  border: 1px solid rgba(151,175,255,.17) !important;
-  border-radius: 10px !important;
-  background: rgba(75,108,178,.12) !important;
-}
-
-.crypto-stats span {
-  display: block !important;
-  color: #8fa4c8 !important;
-  font-size: 8px !important;
-}
-
-.crypto-stats strong {
-  display: block !important;
-  margin-top: 6px !important;
-  color: #c5dcff !important;
-  font-size: 17px !important;
-}
-
-@media (max-width: 680px) {
-  .project-art.cryptox-art {
-    min-height: 230px !important;
-  }
-
-  .project-art.cryptox-art .crypto-window {
-    padding: 13px !important;
   }
 }
