@@ -1401,3 +1401,124 @@ img {
   }
 }
 
+
+/* CRYPTOX PREVIEW - FIXED */
+
+.project-art.cryptox-art {
+  min-height: 265px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 25px !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at center, rgba(91, 104, 230, .35), transparent 65%),
+    linear-gradient(145deg, #101b3b, #071426) !important;
+}
+
+.project-art.cryptox-art .crypto-window {
+  display: block !important;
+  width: 100% !important;
+  max-width: 390px !important;
+  padding: 18px !important;
+  border: 1px solid rgba(151, 175, 255, .3) !important;
+  border-radius: 16px !important;
+  background: rgba(8, 17, 38, .96) !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, .4) !important;
+  transform: rotate(-2deg);
+}
+
+.crypto-topbar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding-bottom: 14px !important;
+  border-bottom: 1px solid rgba(255,255,255,.1) !important;
+}
+
+.crypto-logo {
+  display: grid !important;
+  width: 30px !important;
+  height: 30px !important;
+  flex-shrink: 0;
+  place-items: center !important;
+  border-radius: 9px !important;
+  color: white !important;
+  background: linear-gradient(135deg,#6c8dff,#8d56ed) !important;
+  font-weight: 700 !important;
+}
+
+.crypto-topbar strong {
+  color: white !important;
+  font-size: 14px !important;
+}
+
+.crypto-status {
+  margin-left: auto !important;
+  color: #91b8ff !important;
+  font-size: 8px !important;
+  letter-spacing: 1px !important;
+}
+
+.crypto-balance {
+  padding: 20px 0 !important;
+}
+
+.crypto-balance small {
+  color: #8fa4c8 !important;
+  font-size: 9px !important;
+}
+
+.crypto-balance h3 {
+  margin: 5px 0 !important;
+  color: white !important;
+  font-size: 18px !important;
+}
+
+.crypto-amount {
+  margin: 8px 0 !important;
+  color: #c5dcff !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+}
+
+.crypto-positive {
+  color: #8fc7ff !important;
+  font-size: 10px !important;
+}
+
+.crypto-stats {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 9px !important;
+}
+
+.crypto-stats div {
+  padding: 12px 9px !important;
+  border: 1px solid rgba(151,175,255,.17) !important;
+  border-radius: 10px !important;
+  background: rgba(75,108,178,.12) !important;
+}
+
+.crypto-stats span {
+  display: block !important;
+  color: #8fa4c8 !important;
+  font-size: 8px !important;
+}
+
+.crypto-stats strong {
+  display: block !important;
+  margin-top: 6px !important;
+  color: #c5dcff !important;
+  font-size: 17px !important;
+}
+
+@media (max-width: 680px) {
+  .project-art.cryptox-art {
+    min-height: 230px !important;
+  }
+
+  .project-art.cryptox-art .crypto-window {
+    padding: 13px !important;
+  }
+}
