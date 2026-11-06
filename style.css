@@ -1580,3 +1580,22 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Fix CryptoX project card size */
+.project-art.cryptox-art {
+    height: 265px !important;
+    min-height: 265px !important;
+    padding: 10px !important;
+    box-sizing: border-box;
+    overflow: hidden !important;
+}
+
+.crypto-dashboard {
+    min-height: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    transform: scale(0.78) perspective(1000px) rotateY(-3deg) !important;
+    transform-origin: center center;
+}
+
